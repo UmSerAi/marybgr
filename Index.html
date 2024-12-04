@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&N</title>
+    <link rel="stylesheet" href="IndexStyle.css">
+    <script src="IndexScript.js"></script>
+</head>
+<body>
+   <!-- Seção inicial -->
+   <div class="full-screen">
+    <div class="title">MARYANA <br> <div class="subtitle">& NICOLAS</div></div>
+    <header class="initial-header">
+        <div class="logo"> <img src="Images/logo.png"></div>
+        <div class="nav-links">
+            <a onclick="enableScrollAndGoToContent('sobre')">About</a>
+            <a onclick="enableScrollAndGoToContent('servicos')">Gift</a>
+            <a onclick="enableScrollAndGoToContent('contato')">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="https://x.com/Um_ser_la" class="redes"><img src="Images/twitter.png"></a>
+            <a href="https://www.tiktok.com/@niccg05?is_from_webapp=1&sender_device=pc" class="redes"><img src="Images/tiktok.png"></a>
+            <a href="https://www.instagram.com/nicgc.mbr/" class="redes"><img src="Images/insta.png"></a>
+        </div>
+    </header>
+    
+    <div class="image">
+        <p></p>
+        <button class="scroll-down-btn" onclick="enableScrollAndGoToContent('sobre')"><img src="Images/seta.png"></button>
+    </div>
+</div>
+<div class="sticky">
+    <a onclick="enableScrollAndGoToContent('sobre')">About</a>
+    <a onclick="enableScrollAndGoToContent('servicos')">Gift</a>
+    <a onclick="enableScrollAndGoToContent('contato')">Contact</a>
+</div>
+
+  <!-- Conteúdo restante -->
+  <div class="content" id="sobre" style="background-color: rgb(211, 211, 255);">
+    <h2>Sobre</h2>
+    <p>Bem-vindo à segunda parte da página! Agora você pode rolar normalmente.</p>
+    <p>Adicione mais conteúdo aqui conforme necessário.</p>
+  </div>
+  
+  <div class="content" id="servicos" style="background-color: rgb(211, 255, 211);">
+    <h2>Serviços</h2>
+    <p>Informações sobre os serviços.</p>
+  </div>
+
+  <div class="content" id="contato" style="background-color: rgb(255, 211, 211);">
+    <h2>Contato</h2>
+    <p>Detalhes de contato.</p>
+  </div>
+</body>
+</html>

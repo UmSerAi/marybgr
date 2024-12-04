@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header Example</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo para a seção inicial */
+    .full-screen {
+      width: 100%;
+      height: 100vh; /* 100% da altura da viewport */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #3498db;
+      color: white;
+      font-size: 24px;
+    }
+
+    /* Header sticky */
+    nav {
+      position: sticky;
+      top: 0; /* Fica fixo no topo da página */
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* Certifica que fica sobre outros elementos */
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    /* Conteúdo das seções */
+    section {
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .about {
+      background-color: #ecf0f1;
+    }
+
+    .services {
+      background-color: #bdc3c7;
+    }
+
+    .contact {
+      background-color: #95a5a6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tela inicial com header básica -->
+  <div class="full-screen">
+    <h1>Bem-vindo à Página Inicial</h1>
+    <p>Role para baixo para ver o conteúdo!</p>
+  </div>
+
+  <!-- Header sticky (ativa na segunda parte em diante) -->
+  <nav>
+    <ul>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section id="about" class="about">
+      <h1>Sobre Nós</h1>
+      <p>Informações sobre a empresa ou o site.</p>
+    </section>
+    <section id="services" class="services">
+      <h1>Serviços</h1>
+      <p>Detalhes dos serviços oferecidos.</p>
+    </section>
+    <section id="contact" class="contact">
+      <h1>Contato</h1>
+      <p>Informações para entrar em contato.</p>
+    </section>
+  </main>
+</body>
+</html>
